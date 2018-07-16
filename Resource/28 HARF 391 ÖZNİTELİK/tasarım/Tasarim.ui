@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1236</width>
+    <height>754</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Turkish Sign Language Offline Test -</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox_26">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>1201</width>
+     <height>721</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QPushButton" name="btn_dosyaYukle3">
+    <property name="geometry">
+     <rect>
+      <x>1040</x>
+      <y>10</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Verileri Yükle</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Bütün Veriler :</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="table_all_data">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>1181</width>
+      <height>361</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="gb_classification">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>420</y>
+      <width>481</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Sınıflandırıcı Seç</string>
+    </property>
+    <widget class="QComboBox" name="cb_classificier">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>421</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Random Forest</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Neural Network</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Gausian Navie Bayes</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Support Vector Machine</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Decision Tree</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="btn_split">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>180</y>
+       <width>191</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Train &amp; Test</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>110</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Test Verisi Yüzdesi :</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="hs_test_value">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>120</y>
+       <width>160</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_hs_value">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>100</y>
+       <width>61</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>% 0</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="gb_menu">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>420</y>
+      <width>681</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <widget class="QPushButton" name="btn_confusion">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>200</y>
+       <width>250</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Confusion Matrix</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_x_test">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>50</y>
+       <width>250</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X Test</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_x_train">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>250</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X Train</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_y_test">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>120</y>
+       <width>250</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Y Test</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_y_train">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>120</y>
+       <width>250</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Y Train</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_basari">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>220</y>
+       <width>341</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Başarı Değeri : </string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
